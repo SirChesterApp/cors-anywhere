@@ -1,11 +1,11 @@
-# Sir Chester's `cors-anywhere`
+# Iframe-friendly Fork of `cors-anywhere`
 
 This is a fork of the excellent [`cors-anywhere`]() library, which allows any website to be embedded in an iframe.
 
 More speficially, to disallow themselves to be shown in an iframe, some websites:
 
 - add an `X-Frame-Options` header,
-- add some CSP.
+- use CSP that forbids iframes.
 
 This fork just removes those checks. See [PR #1](https://github.com/SirChesterApp/cors-anywhere/pull/1) for more info.
 
